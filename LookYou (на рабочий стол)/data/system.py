@@ -12,7 +12,6 @@ def display_loading_window(duration=3):
     label = tk.Label(root, text="Пожалуйста, подождите,\nидет загрузка данных...", font=("Arial", 12))
     label.pack(expand=True)
 
-    # Закрытие окна через указанное время
     root.after(duration * 1000, root.destroy)
     root.mainloop()
 
@@ -64,12 +63,10 @@ def save_info_to_file(downloads, roaming, d_folders, output_file="infofile.txt")
     print(f"Информация сохранена в файл: {output_file}")
 
 if __name__ == "__main__":
-    display_loading_window()  # Показывает всплывающее окно с сообщением
+    display_loading_window()
 
-    # Сбор информации
     downloads_files = get_files_from_downloads()
     roaming_files = get_files_from_roaming()
     d_drive_folders = get_folders_from_d_drive()
 
-    # Сохранение информации в файл
     save_info_to_file(downloads_files, roaming_files, d_drive_folders)
