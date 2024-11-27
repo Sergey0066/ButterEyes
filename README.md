@@ -40,7 +40,7 @@
 ## Как приобрести?
 
 - 📧 Discord: sergey0066
-- 📞 Telegram: @sergey_complete
+- 📧 Telegram: @sergey_complete
 
 ## Лицензия
 
