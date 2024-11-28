@@ -26,7 +26,6 @@
 
 Цена платной версии: 900 рублей.
 
-- Discord: sergey0066
 - Telegram: @sergey_complete
 
 ## Лицензия
