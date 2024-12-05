@@ -19,7 +19,7 @@ def display_message():
     Нажмите Enter, чтобы закрыть программу.
     """
     print(message)
-    input()  # Ждём, пока пользователь нажмёт Enter
+    input()
 
 if __name__ == "__main__":
     display_message()
