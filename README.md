@@ -22,7 +22,7 @@
 
 Цена платной версии: 490 рублей.
 
-- Telegram: @nokkat5
+Telegram: @nokkat5
 
 ## Лицензия
 
